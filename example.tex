@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{kotex}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+
+
+\thispagestyle{empty}
+\section{specular light range}
+$\mathbf{L}=\left(x_{0},y_{0},z_{0}\right)$, $\mathbf{C}=\left(x_{1},y_{1},z_{1}\right)$이라고 할 때, 평면 위의 한 점 $\mathbf{p}=\left(x,y,0\right)$에서의 light direction vector $\mathbf{l}=\left(x_{0}-x,y_{0}-y,z_{0}\right)$, view camera vector $\mathbf{c}=\left(x_{1}-x,y_{1}-y,z_{1}\right)$이다. reflection vector $\mathbf{r}=\left(x-x_{0},y-y_{0},-z_{0}\right)$이므로 
+\begin{align}
+\mathbf{r}\cdot \mathbf{c}=- \big\{\left(x-x_{0}\right)\left(x-x_{1}\right)+\left(y-y_{0}\right)\left(y-y_{1}\right) \big\} +z_{0}z_{1}
+\end{align}
+$z=\mathbf{r}\cdot \mathbf{c}$라 할 때, 이 식은 
+\begin{align}
+\left(x-x_{0}\right)\left(x-x_{1}\right)+\left(y-y_{0}\right)\left(y-y_{1}\right)=z_{0}z_{1}-z
+\end{align}
+이다. 이 때, $z$에 따라 좌변을 좌표평면에 그리면 : $\left(x_{0},y_{0}\right)$, $\left(x_{1},y_{1}\right)$을 지름으로 하는 원이다.
+\begin{enumerate}
+\item $z_{0}z_{1}-z>0$ : 원보다 큰 원
+\item $z_{0}z_{1}-z=0$ : 원과 일치
+\item $z_{0}z_{1}-z<0$ : 원보다 작은 원
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
